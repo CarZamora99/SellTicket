@@ -1,0 +1,170 @@
+/*Esta clase para los atributos default*/
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+/*Esta clase es para centrar la hoja de la pagina web*/
+.contenedor{
+    width: 95%;
+    max-width:1000px;
+    margin: auto;
+}
+/*Esta clase es para la separacion de los parrafos*/
+.contenedor p{
+    margin-bottom: 40px;
+}
+/*barra de navegacion*/
+header nav{
+    background:#01DFD7;
+    margin-bottom:10px;
+}
+/*list-style quitar lo preterminado de las opciones*/
+header nav ul{
+    list-style: none;
+    overflow: hidden;
+}
+/*estilo de los botones float hace que roten en este caso poner a lado*/ 
+header ul li{
+    float: left;
+}
+/*links*/
+header nav ul li a {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    background: #2980b9;
+}
+.menu-fixed {
+	position:fixed;
+	z-index:1000;
+	top:0;
+	max-width:1000px;
+	width:100%;
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+
+.buttonleft{
+color: #0099CC;
+background: #1dd235;
+border: 2px solid #0099CC;
+border-radius: 6px;
+border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      cursor: pointer;
+      text-decoration: none;
+      text-transform: uppercase;
+}
+.buttonleft:hover {
+      background-color: #169c34;
+      color: white;
+ }
+.buttonright{
+    color: #0099CC;
+background: #1dd235;
+border: 2px solid #0099CC;
+border-radius: 6px;
+border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      cursor: pointer;
+      text-decoration: none;
+      text-transform: uppercase;
+}
+.buttonright:hover {
+      background: #169c34;
+      color: white;
+ }
+
+td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.ex1 img{
+height: 200px;
+width: 300px;
+margin: 15px 0;
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;
+}
+.ex1 img:hover {
+height: 270px;
+width: 370px;
+margin-left: -50px;
+}
+
+footer{
+    background: #4e4638;
+    width: 100%;
+    height: 100%;
+}
+
+/*Submenu*/
+.submenu{
+    position: absolute;
+    background: #333333;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Open sans';
+    text-decoration: none;
+}
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+.iconos-sociales img{ 
+transition:all 0.5s ease-out;}
+.iconos-sociales img:hover{
+border-radius:50px;}
+
+.btn {
+  display: inline-block;
+  padding: 7px 17px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.btn:hover {background-color: #3e8e41}
+
+.btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

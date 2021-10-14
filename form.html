@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Compra</title>
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, input[type=password], input[type=number], input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+<h2>Registro Cliente</h2>
+<p>Llenar correctamente el formulario que se requiera correctamente.</p>
+
+<div class="container">
+  <form name="form" method="POST" action="insertar_clie.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname1">Nombre:</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="nomb" name="nombre" placeholder="Ingresa nombre..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="pname">Apellido Paterno:</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="pname" name="apepa" placeholder="Ingresa tu apellido..">
+    </div>
+    <div class="row">
+    <div class="col-25">
+      <label for="mname">Apellido Materno:</label>
+    </div>    
+    <div class="col-75">
+      <input type="text" id="mname" name="apema" placeholder="Ingresa tu apellido..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="email">Correo:</label>
+    </div>    
+    <div class="col-75">
+      <input type="email" id="email" name="correo" placeholder="Ingresa tu correo..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="pais">Pais</label>
+    </div>
+    <div class="col-75">
+      <select id="pais" name="pais">
+        <option value="MEXICO">Mexico</option>
+        <option value="CANADA">Canada</option>
+        <option value="USA">USA</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="ci">Ciudad:</label>
+    </div>    
+    <div class="col-75">
+      <input type="text" id="ciudad" name="ciudad" placeholder="Ingresa tu ciudad..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="cod">Codigo Postal:</label>
+    </div>    
+    <div class="col-75">
+      <input type="number" id="cp" name="codi" placeholder="Ingresa tu codigo postal..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="cuent">No cuenta:</label>
+    </div>    
+    <div class="col-75">
+      <input type="text" id="cuenta" name="cuenta" placeholder="Ingresa tu numero de cuenta..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="us">Usuario:</label>
+    </div>    
+    <div class="col-75">
+      <input type="text" id="user" name="usu">
+    </div>
+  </div> 
+  <div class="row">
+    <div class="col-25">
+      <label for="con">Contrasena:</label>
+    </div>    
+    <div class="col-75">
+      <input type="password" id="pass" name="contra">
+    </div>
+  </div>
+  <button class="bu" type="submit">Registar</button>
+  </form>
+</div>
+</body>
+</html>

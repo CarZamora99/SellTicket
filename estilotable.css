@@ -1,0 +1,67 @@
+
+   #tevento {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tevento td, #tevento th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tevento tr:nth-child(even){background-color: #f2f2f2;}
+
+#tevento tr:hover {background-color: #ddd;}
+
+#tevento th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+.btnn {
+/* Color del texo */
+
+color: #0099CC;
+
+/* Eliminar color de fondo */
+
+background: transparent;
+
+/* Grosor del borde, estilo de línea y color */
+
+border: 2px solid #0099CC;
+
+/* Añadir esquinas curvadas */
+
+border-radius: 6px;
+
+/* Poner texto en mayúsculas */
+
+border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      cursor: pointer;
+      text-decoration: none;
+      text-transform: uppercase;
+}
+.btnn {
+      background-color: white; 
+      color: black; 
+      border: 2px solid #008CBA;
+}
+
+/* Al poner el curso encima (hover) */
+
+.btnn:hover {
+      background-color: #008CBA;
+      color: white;
+ }
